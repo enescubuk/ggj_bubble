@@ -9,6 +9,7 @@ public class TelephoneController : MonoBehaviour
     internal bool isCalling;
 
     public List<string> texts = new List<string>();
+    private Quaternion _initialRotation;
 
     [SerializeField] private float typingSpeed = 0.05f; 
     [SerializeField] private float dialogueDuration = 2f;
@@ -61,6 +62,7 @@ public class TelephoneController : MonoBehaviour
 
     public void StopCallingPhone()
     {
+        Phone.transform.rotation = _initialRotation;
         GetComponent<AudioSource>().Stop();
         EventTriggered();
         isCalling = false;
