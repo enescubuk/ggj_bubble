@@ -1312,13 +1312,105 @@ MonoBehaviour:
   TeletextImage: {fileID: 483722928}
   Elements:
   - communicationMethod: 1
-    PrintedMaterial: {fileID: 2100000, guid: 40f22089c2ebb6b4e8d26a513d39a055, type: 2}
-    ApprovedMaterial: {fileID: 2100000, guid: daa8ce367fc98f942809d72e78f56772, type: 2}
+    PrintedMaterial: {fileID: 2100000, guid: 6e94509661fe9d94680a0dfda34f7231, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: 425d44a2fa1519844bd8cbd5e5582422, type: 2}
     TelephoneDialoguesList: []
     TTRawImage: {fileID: 0}
   - communicationMethod: 0
     PrintedMaterial: {fileID: 2100000, guid: 40f22089c2ebb6b4e8d26a513d39a055, type: 2}
     ApprovedMaterial: {fileID: 2100000, guid: daa8ce367fc98f942809d72e78f56772, type: 2}
+    TelephoneDialoguesList:
+    - SECRETARY
+    - The products are ready for sale, Mr. Rastelli.
+    - "All that\u2019s left is your approval."
+    - Mr. Edward would never have made such mistakes.
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 1
+    PrintedMaterial: {fileID: 2100000, guid: 3eb4c0a754a2f024ba290650859cd29e, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: 7a6acd4255b654c4bb867cdd43cef23a, type: 2}
+    TelephoneDialoguesList:
+    - asdasd
+    - fghfghfghfgh
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 0}
+    ApprovedMaterial: {fileID: 2100000, guid: 7a6acd4255b654c4bb867cdd43cef23a, type: 2}
+    TelephoneDialoguesList:
+    - STEVE
+    - 'Just so you know, Samuel, '
+    - "we\u2019ll be working with Novamind from now on."
+    - "Don\u2019t try to oppose it like Dad did,"
+    - "or we\u2019ll run into problems."
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 1
+    PrintedMaterial: {fileID: 2100000, guid: 40f22089c2ebb6b4e8d26a513d39a055, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: daa8ce367fc98f942809d72e78f56772, type: 2}
+    TelephoneDialoguesList:
+    - asdasd
+    - fghfghfghfgh
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 1
+    PrintedMaterial: {fileID: 2100000, guid: 404c82792e34fb342a1aca239daebb19, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: bf3a51223266e1848af885677f065a3f, type: 2}
+    TelephoneDialoguesList:
+    - asdasd
+    - fghfghfghfgh
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 2100000, guid: 404c82792e34fb342a1aca239daebb19, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: bf3a51223266e1848af885677f065a3f, type: 2}
+    TelephoneDialoguesList:
+    - STEVE
+    - "We\u2019re not working with Altora, Samuel."
+    - 'I tore up the contract you received. '
+    - This matter is closed.
+    - "Also, don\u2019t forget to buy SHIM shares."
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 1
+    PrintedMaterial: {fileID: 2100000, guid: f58758e14f83b244a8062894ade51610, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: f5b093f0494b99545a530dd31adce973, type: 2}
+    TelephoneDialoguesList:
+    - asdasd
+    - fghfghfghfgh
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 2100000, guid: f58758e14f83b244a8062894ade51610, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: f5b093f0494b99545a530dd31adce973, type: 2}
+    TelephoneDialoguesList:
+    - ALTORA
+    - "You didn\u2019t respond to the agreement we sent you,"
+    - Mr. Rastelli. You stand to make a lot of money.
+    - "Our only request is that next time, Steve isn\u2019t informed. Have a good
+      day."
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 2100000, guid: f3cc6e04c8ad6d349bf71d677dbf92bb, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: 2e02e5b021c920f4e913290eaeb8c332, type: 2}
+    TelephoneDialoguesList:
+    - STEVE
+    - "It\u2019s time to fulfill Dad\u2019s greatest dream, brother."
+    - "We\u2019re opening new offices. Good times are ahead."
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 0}
+    ApprovedMaterial: {fileID: 0}
+    TelephoneDialoguesList:
+    - BREWSTER
+    - "Your father wouldn\u2019t have wanted this, Samuel."
+    - " I\u2019ve taken the agreement money, "
+    - "and I\u2019ll destroy it as soon as possible.\_Goodbye"
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 0
+    PrintedMaterial: {fileID: 2100000, guid: f3cc6e04c8ad6d349bf71d677dbf92bb, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: 2e02e5b021c920f4e913290eaeb8c332, type: 2}
+    TelephoneDialoguesList:
+    - SECRETARY
+    - Novamind has filed a lawsuit against us, Mr. Rastelli.
+    - Either the payment will be made, or the matter will proceed legally.
+    TTRawImage: {fileID: 0}
+  - communicationMethod: 1
+    PrintedMaterial: {fileID: 2100000, guid: c2736a933c72b1544b4db407f41eccab, type: 2}
+    ApprovedMaterial: {fileID: 2100000, guid: 2075bf7e2c80e2c408c776d06e7d8979, type: 2}
     TelephoneDialoguesList:
     - asdasd
     - fghfghfghfgh
@@ -1344,6 +1436,55 @@ Transform:
   - {fileID: 1812766993}
   - {fileID: 1546983056}
   - {fileID: 985890316}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1697813819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697813821}
+  - component: {fileID: 1697813820}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1697813820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697813819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 657658c2516c2774faba1d5b32472458, type: 2}
+--- !u!4 &1697813821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697813819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1748055332 stripped
@@ -9952,3 +10093,4 @@ SceneRoots:
   - {fileID: 4087220216379383367}
   - {fileID: 1322809413}
   - {fileID: 1087754564}
+  - {fileID: 1697813821}
