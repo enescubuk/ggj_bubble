@@ -13,7 +13,9 @@ public class SignatureController : MonoBehaviour
 
     private void GoSign()
     {
-        transform.DOMove(GameManager.Instance.TablePointForPaperDown.transform.position, 0.5f).OnComplete(() => {
+        Vector3 _targetPos = GameManager.Instance.TablePointForPaperDown.transform.position;
+        _targetPos.y += 0.7f;
+        transform.DOMove(_targetPos, 0.5f).OnComplete(() => {
             GameManager.Instance.PrintedPaper.GetComponent<PaperController>().currentState = PaperController.State.Approved;
             transform.DOMove(GameManager.Instance.TablePointForPaperUp.transform.position, 0.5f).OnComplete(() => {
                 Invoke("GoBack", 0.2f);

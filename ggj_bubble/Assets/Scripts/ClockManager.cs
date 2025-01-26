@@ -10,8 +10,8 @@ public class ClockManager : MonoBehaviour
         float minuteAngle = minutes * 6f; // Yelkovanın açısı
         float hourAngle = (minutes / 60f) * 30f; // Akrep açısı
 
-        minuteHand.Rotate(Vector3.up, minuteAngle);
-        hourHand.Rotate(Vector3.up, hourAngle);
+        minuteHand.Rotate(Vector3.forward, minuteAngle);
+        hourHand.Rotate(Vector3.forward, hourAngle);
     }
 
     private void Update()

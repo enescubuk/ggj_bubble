@@ -53,6 +53,10 @@ public class PlayerController : MonoBehaviour
                 {
                     hittedObject.GetComponent<SignatureController>().Sign();
                 }
+                else if (hittedObject.GetComponent<TelephoneController>() && hittedObject.GetComponent<TelephoneController>().isCalling)
+                {
+                    hittedObject.GetComponent<TelephoneController>().StopCallingPhone();
+                }
             }
         }
     }
