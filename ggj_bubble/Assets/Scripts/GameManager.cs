@@ -23,6 +23,13 @@ public class GameManager : MonoBehaviour
 
     public Element[] Elements;
 
+    [Header("Sounds")]
+
+    public AudioClip ClockSound;
+    public AudioClip PrinterSound;
+
+
+
     private void Awake()
     {
         if (Instance == null)

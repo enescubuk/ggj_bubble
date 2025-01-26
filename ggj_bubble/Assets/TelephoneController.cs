@@ -51,25 +51,17 @@ public class TelephoneController : MonoBehaviour
     }
     public void CallingPhone()
     {
+        GetComponent<AudioSource>().Play();
         isCalling = true;
         Phone.transform.DOShakeRotation(1f, new Vector3(15f, 15f, 15f), 7, 15)
             .SetEase(Ease.Linear) // Hızın sürekli olmasını sağlıyoruz
             .SetLoops(-1, LoopType.Restart); // Sonsuz döngü ile tekrar et
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            CallingPhone();
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            StopCallingPhone();
-        }
-    }
+
 
     public void StopCallingPhone()
     {
+        GetComponent<AudioSource>().Stop();
         EventTriggered();
         isCalling = false;
         Phone.transform.DOKill();

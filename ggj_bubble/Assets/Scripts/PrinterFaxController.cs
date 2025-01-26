@@ -9,7 +9,8 @@ public class PrinterFaxController : MonoBehaviour
 
     public void Print(Material _printedMaterial, Material _approvedMaterial)
     {
-        GameObject _paper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.Euler(279.753235f,270.000122f,89.9998856f));
+        GetComponent<AudioSource>().Play();
+        GameObject _paper = Instantiate(paperPrefab, paperSpawnPoint.position, Quaternion.Euler(-90,90,0));
         _paper.GetComponent<Renderer>().material = _printedMaterial;
         _paper.GetComponent<PaperController>().ApprovedMaterial = _approvedMaterial;
         _paper.transform.DOMove(paperTargetPoint.position, 1f);
