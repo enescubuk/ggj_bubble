@@ -10,6 +10,7 @@ public class TrashController : MonoBehaviour
         {
             transform.DOShakeRotation(0.5f, 15, 15);
             Destroy(GameManager.Instance.PrintedPaper); 
+            GameManager.Instance.ActionIsDone();
         }
     }
 }

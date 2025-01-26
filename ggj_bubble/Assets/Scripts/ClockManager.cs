@@ -1,9 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ClockManager : MonoBehaviour
 {
     [SerializeField] private Transform hourHand;
     [SerializeField] private Transform minuteHand;
+    
+
+
+    
 
     public void IncreaseTime(int minutes)
     {

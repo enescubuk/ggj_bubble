@@ -16,6 +16,7 @@ public class PaperController : MonoBehaviour
     public State currentState;
 
     private Vector3 _targetPos;
+    public Material ApprovedMaterial;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class PaperController : MonoBehaviour
     public void MoveToTable()
     {
         currentState = State.MovingToTable;
-        transform.rotation = Quaternion.Euler(0, 90, 0);
+        transform.rotation = Quaternion.Euler(-90, 0, 0);
         transform.position = GameManager.Instance.TablePointForPaperUp.transform.position;
         _targetPos = GameManager.Instance.TablePointForPaperDown.transform.position;
         Invoke("MoveToDown", 0.5f);
@@ -36,12 +37,19 @@ public class PaperController : MonoBehaviour
         transform.DOMove(_targetPos, 0.5f);
     }
 
+    public void GetApproved()
+    {
+        currentState = State.Approved;
+        GetComponent<Renderer>().material = ApprovedMaterial;
+    }
+
     internal void GoToApprovedDocs()
     {
         transform.position = GameManager.Instance.ApprovedDocsUp.transform.position;
         float randomYRotation = UnityEngine.Random.Range(-5f, 5f);
-        transform.rotation = Quaternion.Euler(0, 90+randomYRotation, 0);
+        transform.rotation = Quaternion.Euler(-90, randomYRotation, 0);
         _targetPos = GameManager.Instance.ApprovedDocsDown.transform.position;
         Invoke("MoveToDown", 0.5f);
+        GameManager.Instance.ActionIsDone();
     }
 }

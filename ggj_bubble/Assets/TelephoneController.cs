@@ -1,9 +1,48 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
+using TMPro;
+using System.Collections.Generic;
 public class TelephoneController : MonoBehaviour
 {
     public GameObject Phone;
     internal bool isCalling;
+
+    public List<string> texts = new List<string>();
+
+    [SerializeField] private float typingSpeed = 0.05f; 
+    [SerializeField] private float dialogueDuration = 2f;
+    public TMP_Text dialogueText;
+
+    private void EventTriggered()
+    {
+        StartCoroutine(PlayDialogue());
+    }
+
+    private IEnumerator PlayDialogue()
+    {
+
+        foreach (string sentence in texts)
+        {
+            yield return StartCoroutine(TypeSentence(dialogueText, sentence)); // Harf harf yaz
+            yield return new WaitForSeconds(dialogueDuration); // Diyalog sonrası bekleme süresi
+        }
+        
+        dialogueText.text = "";
+        Phone.SetActive(true);
+        GameManager.Instance.ActionIsDone();
+    }
+
+    private IEnumerator TypeSentence(TMP_Text dialogueTextComponent, string sentence)
+    {
+        dialogueTextComponent.text = "";
+
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueTextComponent.text += letter;
+            yield return new WaitForSeconds(typingSpeed); // Harf arası yazma hızı
+        }
+    }
 
     public void GetIdle()
     {
@@ -31,6 +70,7 @@ public class TelephoneController : MonoBehaviour
 
     public void StopCallingPhone()
     {
+        EventTriggered();
         isCalling = false;
         Phone.transform.DOKill();
         Phone.SetActive(false);
